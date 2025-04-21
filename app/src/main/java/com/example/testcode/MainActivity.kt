@@ -16,6 +16,8 @@ import java.text.SimpleDateFormat
 import java.util.*
 import kotlinx.coroutines.delay
 import java.time.LocalDate
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 
 /**
  * MainActivity는 파인만의 경로적분(Path Integral) 아이디어를 적용한
