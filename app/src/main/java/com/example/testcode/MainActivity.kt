@@ -43,10 +43,8 @@ class MainActivity : ComponentActivity() {
      * 인사말 형식 지정 함수 - null 이름 처리 버그 포함
      */
     fun formatGreeting(name: String?): String {
-        if (name == null) {
-            return "Hello, GUEST!"
-        }
-        return "Hello, " + name.uppercase() + "!"
+        val upperCaseName = name?.uppercase() ?: "GUEST"
+        return "Hello, $upperCaseName!"
     }
     
     /**
